@@ -43,3 +43,31 @@ console.log(sortedAges);//büyükten küçüğe yazma
 //shift
 let shifted = ages.shift();
 console.log(ages);//ilk elemanı çıkarır
+
+
+//Copy an array
+let arr=[1,2,3];
+let newArray = arr.map(x => x);
+console.log(newArray);
+
+//reduce
+let letters = ["a","b","c","d","e","f"];
+let add = (x,y) => x + y ;
+console.log(letters.reduce(add));//hepsini birleştirir.
+
+//key
+let iterator = data.keys();
+for ( let key of iterator ){
+    console.log(key + " ");
+}
+
+//join
+console.log(ages.join("-"));
+
+//includes
+console.log(ages.includes(4));
+console.log(ages.includes(121));
+
+//splice
+ages.splice(0,1,77)//ilk indexdeki değeri verilen değerle değiştirir
+console.log(ages);
